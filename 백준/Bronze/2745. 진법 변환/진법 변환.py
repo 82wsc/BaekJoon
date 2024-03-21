@@ -1,21 +1,4 @@
-import sys
+n, b = input().split()
+print(int(n, int(b)))
 
-N,B = map(str, sys.stdin.readline().split())
-
-B=int(B)
-
-n=[]
-
-for i in N:
-  if i.isdigit() is True:
-    n.append(int(i))
-  else:
-    n.append(ord(i)-55)
-
-n=n[::-1]
-
-r=0
-for i in range(len(N)):
-  r+=n[i]*(B**(i))
- 
-print(r)
+# int(str, int) 2<=int<=36 str을 int진법으로 변환해줌 
