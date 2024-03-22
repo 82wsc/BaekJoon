@@ -3,8 +3,7 @@ N,B = map(int,input().split())
 r = []
 
 while N!= 0:
-  c = int(N%B)
-  r.append(c)
+  r.append(int(N%B))
   N = int(N//B)
 
 r=r[::-1]
